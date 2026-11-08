@@ -16,3 +16,17 @@ body {
    
     max-width: 100%;
 }
+
+.nav-container section {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 23px;
+    height: 80px;
+}
+
+#logo {
+    height: 24px;
+}
+
