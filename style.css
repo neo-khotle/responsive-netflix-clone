@@ -9,12 +9,48 @@
     MOBILE (Default: 0px - 767px) 
 ************************************/
 
+/* Typography */
+h1, h3{
+    text-align: center;
+}
+
+h1 {
+    font-size: 34px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+h4{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
 /* General */
 body {
     background-color: rgb(0, 0, 0);
     color: rgb(250, 250, 250);
    
     max-width: 100%;
+}
+
+header {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.9), 
+        rgba(0, 0, 0, 0.7),
+        rgba(0,0,0,0.8)),
+        url("resources/netflix_bg.jpg"); 
+    background-size: cover;
+    height: 80vh;
 }
 
 .nav-container section {
@@ -30,3 +66,46 @@ body {
     height: 24px;
 }
 
+/* Buttons */
+button {
+    background: rgb(229, 9, 20);
+    color: rgb(250, 250, 250);
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    height: 32px;
+    width: 72px;
+    cursor: pointer;
+}
+
+#hero-content, form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    gap: 16px;
+}
+
+#hero-content {
+    padding: 70px 30px;
+}
+
+form > :first-child {
+    width: 80vw;
+    height: 48px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    padding-left: 15px;
+    color: #ffffff;
+}
+
+form > :last-child {
+    width: 45%;
+    min-width: 160px;
+    height: 48px;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
