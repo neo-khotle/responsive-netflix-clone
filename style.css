@@ -173,3 +173,46 @@ form > :last-child {
     display: block;
     border-radius: 12px;    
 }
+
+
+/* Reasons */
+#reasons {
+    display: block;
+    padding: 30px;
+}
+
+.reasons-cards{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1px;
+}
+
+.card {
+    border-radius: 12px;
+    height: 197px;
+    padding: 25px 20px;
+    margin-top: 10px;
+    position: relative;
+    background: radial-gradient(circle at 90% 90%, rgba(133, 83, 77, 0.4), transparent 50%), /*subtle radial glow in the bottom-right corner */
+                linear-gradient(135deg, #120b44e1, #2a1d56f0); /*deep dark linear gradient base */
+    border-radius: 12px; /* Standard for card-style UI */
+    color: white;
+}
+
+.card img{
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+    z-index: 2;
+}
+
+.card h3 {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
