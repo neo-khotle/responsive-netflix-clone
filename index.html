@@ -166,12 +166,14 @@
             <h2>Frequently Asked Questions</h2>
 
             <details class="faq">
-                <summary>What is Netflix?</summary>
+                <summary>What is Netflix?
+                <!-- <div class="accordion"><button class="toggle"><span class="icon">+</span></button>--> </summary> 
                 <p>
                     Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.
 
                     You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!
                 </p>
+                </div>
             </details>
 
             <details class="faq">
@@ -267,6 +269,15 @@
             This page is protected by Google reCAPTCHA to ensure you're not a bot.
         </span>
     </footer>
+    
+    <!-- <script src="script.js">
+        const btn = document.querySelector(".toggle");
+        const content = document.querySelector(".faq");
 
+        btn.addEventListener("click", () => {
+        btn.classList.toggle("active");
+        content.classList.toggle("open");
+        });
+    </script> -->
 </body>
 </html>
