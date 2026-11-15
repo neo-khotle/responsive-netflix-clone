@@ -391,3 +391,42 @@ footer span a{
 
 }
 
+/* ==========================================
+   PC / DESKTOP (1024px and up)
+   ========================================== */
+
+@media (min-width: 1024px) {
+
+    header{
+        height: 100vh;
+    }
+
+    .nav-container section {
+        padding: 0 5rem;
+    }
+
+    #logo {
+        height: 40px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    #hero-content{
+        padding: 150px 50px;
+    }
+
+    #hero-content, form{
+        margin: 0 250px;
+    }
+
+    #hero-content h3{
+        margin: 0;
+    }
+
+    #hero-content form> :first-child,
+    #hero-content form> :last-child{
+        height: 56px;
+    }
+}
