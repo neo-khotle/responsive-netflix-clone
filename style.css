@@ -141,10 +141,10 @@ form > :last-child {
     left: -15px;
     bottom: 1px;
     z-index: 2;
-    font-size: 80px; /*changes the number*/
+    font-size: 80px; /*changes the number sizes*/
     color: black;
     /* -webkit-text-stroke: #ffffff; */
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 0.5px;
     -webkit-text-stroke-color: #ffffff;
 }
 
@@ -154,9 +154,7 @@ form > :last-child {
     width: 112px;
 }
 
-/* .section h2 {
-    margin-left: 
-} */
+
 
 /* Video */
 .video{
@@ -377,7 +375,6 @@ footer span a{
 
     footer form input.email{
         width: 200vw;
-        background-color: yellow;
     }
 
     .footer-links{
@@ -432,6 +429,83 @@ footer span a{
 
     #trending {
         padding: 30px;
-        margin: 10px 80px;
+        margin: 10px 15px 10px 50px ;
     }
+
+    .movie-list1, .movie-list2{
+        padding: 30px
+    }
+
+    .item {
+        height: 155px;
+        width: 195px;
+    }
+    
+    .item img {
+        height: 180px;
+        width: 140px;
+    }
+
+    .item span{
+        left: -25px;
+        top: 90px;
+    }
+
+    #reasons {
+    padding: 70px;
+    }
+
+    .reasons-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    /* #faq {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 0 60px;
+    } */
+
+    #faq h2 {
+        padding: 10px 30px;
+    }
+
+    .faq-buttons{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 0 30px;
+    }
+
+    .faq {
+        height: 84px;
+    }
+
+    .faq summary {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        font-size: 24px;
+        transition: background-color 0.2s ease;
+    }
+
+    .icon {
+        font-size: 45px;
+    }
+
+    .faq p {
+        font-size: 24px;
+    }
+
+    footer {
+        padding: 0 60px;
+    }
+
+    .footer-links{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
 }
