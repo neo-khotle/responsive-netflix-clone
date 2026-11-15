@@ -357,7 +357,37 @@ footer span a{
 
     form > :first-child {
         width: 30vw;
+    }    
+
+    footer {
+        display:flex;
+        flex-direction: column;
     }
 
+    footer h4{
+        text-align: center;
+    }
     
+    footer form{
+        gap: 1px;
+        padding-bottom: 50px;
+        width: 100%;
+        margin: 0;
+    }
+
+    footer form input.email{
+        width: 200vw;
+        background-color: yellow;
+    }
+
+    .footer-links{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer span{
+        padding:15px 0 40px 0;
+    }
+
 }
+
