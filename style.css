@@ -429,4 +429,9 @@ footer span a{
     #hero-content form> :last-child{
         height: 56px;
     }
+
+    #trending {
+        padding: 30px;
+        margin: 10px 80px;
+    }
 }
