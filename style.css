@@ -335,9 +335,6 @@ footer span a{
         padding: 0 2rem;
     }
 
-    /* #hero-content h3{
-        padding: 0 15px;
-    } */
     #hero-content {
         padding-top: 90px;
     }
@@ -461,13 +458,6 @@ footer span a{
         gap: 10px;
     }
 
-    /* #faq {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-        padding: 0 60px;
-    } */
-
     #faq h2 {
         padding: 10px 30px;
     }
@@ -485,45 +475,45 @@ footer span a{
         background-color: #2d2d2d;
         color: #ffffff;
     }
-/* Put the 84px height on the clickable button bar instead */
-.faq summary {
-    height: 84px;
-    padding: 0 24px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 24px;
-    cursor: pointer;
-    list-style: none;
-    transition: background-color 0.2s ease;
-}
 
-.faq summary::-webkit-details-marker {
-    display: none;
-}
+    .faq summary {
+        height: 84px;
+        padding: 0 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 24px;
+        cursor: pointer;
+        list-style: none;
+        transition: background-color 0.2s ease;
+    }
 
-.faq summary:hover {
-    background-color: #414141;
-}
+    .faq summary::-webkit-details-marker {
+        display: none;
+    }
 
-.icon {
-    font-size: 45px;
-    font-weight: 300;
-    transition: transform 0.25s ease;
-}
+    .faq summary:hover {
+        background-color: #414141;
+    }
 
-/* Rotates '+' span into an '×' when open */
-.faq[open] .icon {
-    transform: rotate(45deg);
-}
+    .icon {
+        font-size: 45px;
+        font-weight: 300;
+        transition: transform 0.25s ease;
+    }
 
-.faq p {
-    font-size: 24px;
-    padding: 24px;
-    margin: 0;
-    border-top: 1px solid #000000;
-    line-height: 1.4;
-}
+    /* Rotates '+' span into an '×' when open */
+    .faq[open] .icon {
+        transform: rotate(45deg);
+    }
+
+    .faq p {
+        font-size: 24px;
+        padding: 24px;
+        margin: 0;
+        border-top: 1px solid #000000;
+        line-height: 1.4;
+    }
 
     footer {
         padding: 0 60px;
