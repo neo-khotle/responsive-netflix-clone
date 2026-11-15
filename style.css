@@ -452,7 +452,7 @@ footer span a{
     }
 
     #reasons {
-    padding: 70px;
+        padding: 70px;
     }
 
     .reasons-cards {
@@ -534,3 +534,93 @@ footer span a{
     }
 
 }
+
+@media (min-width:1280px){
+    h1 {
+        font-size: 56px;
+        font-weight: 700;
+    }
+
+    h2, h3 {
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    #hero-content , main , footer {
+        margin: 0 110px;
+    }
+
+    header {
+        min-height: 90vh;
+    }
+
+    #hero-content, form {
+        margin: 100px 250px;
+    }
+    
+    #reasons{
+        height: 55vh;
+    }
+    .reasons-cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        height: 200px;
+        gap: 15px;
+    }
+
+    .card{
+        height: 310px;
+    }
+    
+    .card p{
+        padding-top: 10px;
+    }
+}
+
+/* FULL SCREEN VIEW */
+@media (min-width:1600px){
+    
+     .nav-container  {
+        padding: 0 310px;
+        margin: 0;
+    }
+     
+
+    #hero-content {
+        padding: 100px 500px;
+    }
+
+    #trending{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #trending h2 {
+        padding-left: 170px;
+        font-size: 30px;
+        font-weight: 500px;
+    }
+
+    .movie-list1, .movie-list2{    
+        display: flex;
+        justify-content: center;
+    }
+
+    .item {
+        height: 380px;
+        width: 270px;
+    }
+    
+    .item img {
+        height: 350px;
+        width: 250px;
+    }
+
+    .item span{
+        left: -25px;
+        top: 200px;
+        height: 20px;
+    }
+
+} 
