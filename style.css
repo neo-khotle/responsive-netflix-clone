@@ -475,30 +475,55 @@ footer span a{
     .faq-buttons{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        align-items: start;
         gap: 20px;
         padding: 0 30px;
     }
 
     .faq {
-        height: 84px;
+        /* height: 84px; */
+        background-color: #2d2d2d;
+        color: #ffffff;
     }
+/* Put the 84px height on the clickable button bar instead */
+.faq summary {
+    height: 84px;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    list-style: none;
+    transition: background-color 0.2s ease;
+}
 
-    .faq summary {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        text-align: center;
-        font-size: 24px;
-        transition: background-color 0.2s ease;
-    }
+.faq summary::-webkit-details-marker {
+    display: none;
+}
 
-    .icon {
-        font-size: 45px;
-    }
+.faq summary:hover {
+    background-color: #414141;
+}
 
-    .faq p {
-        font-size: 24px;
-    }
+.icon {
+    font-size: 45px;
+    font-weight: 300;
+    transition: transform 0.25s ease;
+}
+
+/* Rotates '+' span into an '×' when open */
+.faq[open] .icon {
+    transform: rotate(45deg);
+}
+
+.faq p {
+    font-size: 24px;
+    padding: 24px;
+    margin: 0;
+    border-top: 1px solid #000000;
+    line-height: 1.4;
+}
 
     footer {
         padding: 0 60px;
